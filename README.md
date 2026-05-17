@@ -122,7 +122,7 @@ npm run build
 
 Broader CI-style gate: `npm run ci:checks` (see `docs/automation/QUALITY_AND_RELIABILITY.md`).
 
-Typecheck:
+Lint:
 
 ```bash
 npm run lint
