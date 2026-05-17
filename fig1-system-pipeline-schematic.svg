@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">EntheoGen system and pipeline schematic</title>
+  <desc id="desc">High-level data flow from evidence sources through the dataset middle layer, review gates, approved proposals, the consumer app, and end users.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#344054"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f8fb; }
+      .band { fill: #ffffff; stroke: #d0d5dd; stroke-width: 2; }
+      .source { fill: #e8f3ff; stroke: #1570ef; }
+      .machine { fill: #fff6e5; stroke: #dc6803; }
+      .review { fill: #ecfdf3; stroke: #039855; }
+      .publish { fill: #f4f3ff; stroke: #6941c6; }
+      .app { fill: #fef3f2; stroke: #d92d20; }
+      .text { font-family: Inter, Arial, sans-serif; fill: #101828; }
+      .small { font-size: 22px; }
+      .body { font-size: 24px; }
+      .label { font-size: 20px; fill: #475467; }
+      .title { font-size: 36px; font-weight: 700; }
+      .step { font-size: 26px; font-weight: 700; }
+      .gate { font-size: 21px; font-weight: 700; }
+      .arrow { stroke: #344054; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .thin { stroke: #98a2b3; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="720"/>
+  <text class="text title" x="70" y="70">Fig. 1. Study design and data flow</text>
+  <text class="text label" x="70" y="105">Evidence remains reviewable until human curation and safety gates allow app-facing publication.</text>
+
+  <rect class="band" x="60" y="145" width="1280" height="430" rx="12"/>
+
+  <g>
+    <rect class="source" x="95" y="215" width="205" height="160" rx="10"/>
+    <text class="text step" x="126" y="257">Evidence</text>
+    <text class="text step" x="126" y="289">sources</text>
+    <text class="text label" x="126" y="330">papers, exports,</text>
+    <text class="text label" x="126" y="358">field notes</text>
+  </g>
+
+  <path class="arrow" d="M 310 295 H 390"/>
+
+  <g>
+    <rect class="machine" x="405" y="190" width="250" height="210" rx="10"/>
+    <text class="text step" x="435" y="236">Dataset</text>
+    <text class="text step" x="435" y="268">middle layer</text>
+    <text class="text label" x="435" y="312">normalize JSONL</text>
+    <text class="text label" x="435" y="340">generate candidates</text>
+    <text class="text label" x="435" y="368">write manifests</text>
+  </g>
+
+  <path class="arrow" d="M 665 295 H 745"/>
+
+  <g>
+    <rect class="review" x="760" y="165" width="250" height="260" rx="10"/>
+    <text class="text step" x="790" y="212">Review and</text>
+    <text class="text step" x="790" y="244">safety states</text>
+    <text class="text label" x="790" y="292">approve / reject</text>
+    <text class="text label" x="790" y="320">defer / pending</text>
+    <text class="text label" x="790" y="348">safety sign-off</text>
+    <text class="text label" x="790" y="376">publication gate</text>
+  </g>
+
+  <path class="arrow" d="M 1020 295 H 1100"/>
+
+  <g>
+    <rect class="publish" x="1115" y="195" width="195" height="190" rx="10"/>
+    <text class="text step" x="1145" y="240">Approved</text>
+    <text class="text step" x="1145" y="272">proposals</text>
+    <text class="text label" x="1145" y="318">submitted</text>
+    <text class="text label" x="1145" y="346">transition history</text>
+  </g>
+
+  <path class="thin" d="M 1212 395 V 475"/>
+
+  <g>
+    <rect class="app" x="995" y="490" width="315" height="105" rx="10"/>
+    <text class="text step" x="1025" y="535">EntheoGen app</text>
+    <text class="text label" x="1025" y="568">risk readouts for end users</text>
+  </g>
+
+  <path class="thin" d="M 885 435 V 515 H 980"/>
+
+  <g>
+    <rect class="machine" x="405" y="475" width="250" height="85" rx="10"/>
+    <text class="text gate" x="435" y="510">LLM assistance</text>
+    <text class="text label" x="435" y="540">candidate text only</text>
+  </g>
+  <path class="thin" d="M 530 410 V 460"/>
+
+  <text class="text label" x="94" y="630">Boundary rule: scripts in this repo generate reviewable artifacts under outputs/ and do not write directly into the live app repository.</text>
+</svg>

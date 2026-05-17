@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820" role="img" aria-labelledby="title desc">
+  <title id="title">Example EntheoGen interaction card</title>
+  <desc id="desc">Mocked consumer application card showing a pair, risk score, evidence tier, mechanism, context notes, and guidance.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f8fb; }
+      .card { fill: #ffffff; stroke: #d0d5dd; stroke-width: 2; }
+      .panel { fill: #f9fafb; stroke: #e4e7ec; stroke-width: 2; }
+      .risk { fill: #fff6e5; stroke: #f79009; stroke-width: 2; }
+      .evidence { fill: #ecfdf3; stroke: #12b76a; stroke-width: 2; }
+      .context { fill: #f4f3ff; stroke: #7a5af8; stroke-width: 2; }
+      .text { font-family: Inter, Arial, sans-serif; fill: #101828; }
+      .title { font-size: 36px; font-weight: 700; }
+      .sub { font-size: 20px; fill: #475467; }
+      .pair { font-size: 34px; font-weight: 700; }
+      .label { font-size: 18px; fill: #667085; font-weight: 700; text-transform: uppercase; }
+      .value { font-size: 25px; font-weight: 700; }
+      .body { font-size: 21px; fill: #344054; }
+      .small { font-size: 18px; fill: #475467; }
+      .pillText { font-size: 18px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect class="bg" width="1100" height="820"/>
+  <text class="text title" x="70" y="70">Fig. 4. Example interaction card from the app</text>
+  <text class="text sub" x="70" y="105">Representative app-facing readout using reviewed dataset semantics.</text>
+
+  <rect class="card" x="170" y="145" width="760" height="610" rx="14"/>
+  <text class="text label" x="215" y="205">Interaction pair</text>
+  <text class="text pair" x="215" y="252">Alcohol + Amphetamine Stimulants</text>
+  <text class="text sub" x="215" y="286">pair_key: alcohol|amphetamine_stims</text>
+
+  <rect class="risk" x="215" y="325" width="300" height="115" rx="10"/>
+  <text class="text label" x="245" y="365">Risk label</text>
+  <text class="text value" x="245" y="405">Theoretical interaction</text>
+
+  <rect class="panel" x="545" y="325" width="310" height="115" rx="10"/>
+  <text class="text label" x="575" y="365">Risk score</text>
+  <text class="text value" x="575" y="405">2.00 / low severity</text>
+
+  <rect class="evidence" x="215" y="465" width="300" height="115" rx="10"/>
+  <text class="text label" x="245" y="505">Evidence tier</text>
+  <text class="text value" x="245" y="545">medium provenance</text>
+
+  <rect class="context" x="545" y="465" width="310" height="115" rx="10"/>
+  <text class="text label" x="575" y="505">Context fields</text>
+  <text class="text value" x="575" y="545">field notes + gaps</text>
+
+  <rect class="panel" x="215" y="605" width="640" height="105" rx="10"/>
+  <text class="text label" x="245" y="640">Mechanism and user guidance</text>
+  <text class="text body" x="245" y="675">Shared stimulant/depressant physiology can make effects less predictable.</text>
+  <text class="text body" x="245" y="702">Avoid stacking risks; seek help for severe agitation, chest pain, or collapse.</text>
+
+  <rect class="risk" x="215" y="295" width="92" height="28" rx="14"/>
+  <text class="text pillText" x="234" y="316">caution</text>
+  <rect class="evidence" x="320" y="295" width="126" height="28" rx="14"/>
+  <text class="text pillText" x="338" y="316">reviewed</text>
+  <rect class="context" x="459" y="295" width="143" height="28" rx="14"/>
+  <text class="text pillText" x="477" y="316">contextual</text>
+
+  <text class="text small" x="215" y="735">Source note: this is a publication mockup derived from the Data Records example, not a live medical recommendation.</text>
+</svg>

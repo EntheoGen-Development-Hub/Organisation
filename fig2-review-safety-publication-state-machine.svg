@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Review, safety, and publication state machine</title>
+  <desc id="desc">A state diagram showing data review, safety review, and publication outcomes for a single interaction row.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#344054"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f8fb; }
+      .node { fill: #ffffff; stroke: #98a2b3; stroke-width: 2; }
+      .candidate { fill: #fff6e5; stroke: #dc6803; }
+      .approved { fill: #ecfdf3; stroke: #039855; }
+      .held { fill: #fef3f2; stroke: #d92d20; }
+      .archive { fill: #f2f4f7; stroke: #667085; }
+      .publish { fill: #f4f3ff; stroke: #6941c6; }
+      .text { font-family: Inter, Arial, sans-serif; fill: #101828; }
+      .title { font-size: 36px; font-weight: 700; }
+      .label { font-size: 20px; fill: #475467; }
+      .body { font-size: 24px; }
+      .state { font-size: 26px; font-weight: 700; }
+      .arrow { stroke: #344054; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .soft { stroke: #98a2b3; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <text class="text title" x="70" y="70">Fig. 2. Review, safety, and publication state machine</text>
+  <text class="text label" x="70" y="105">A row can be held or archived without forcing contested evidence into a binary decision.</text>
+
+  <g>
+    <rect class="candidate" x="95" y="230" width="210" height="110" rx="12"/>
+    <text class="text state" x="135" y="275">candidate</text>
+    <text class="text label" x="135" y="308">machine triage</text>
+  </g>
+  <path class="arrow" d="M 315 285 H 405"/>
+
+  <g>
+    <rect class="node" x="420" y="160" width="220" height="95" rx="12"/>
+    <text class="text state" x="464" y="205">approved</text>
+    <text class="text label" x="464" y="232">data review</text>
+  </g>
+  <g>
+    <rect class="held" x="420" y="280" width="220" height="95" rx="12"/>
+    <text class="text state" x="466" y="325">deferred</text>
+    <text class="text label" x="466" y="352">needs context</text>
+  </g>
+  <g>
+    <rect class="archive" x="420" y="400" width="220" height="95" rx="12"/>
+    <text class="text state" x="466" y="445">rejected</text>
+    <text class="text label" x="466" y="472">not exported</text>
+  </g>
+
+  <path class="soft" d="M 640 207 H 725"/>
+  <path class="soft" d="M 640 327 H 725"/>
+  <path class="soft" d="M 640 447 H 725"/>
+
+  <g>
+    <rect class="node" x="740" y="90" width="245" height="86" rx="12"/>
+    <text class="text state" x="785" y="128">not_required</text>
+    <text class="text label" x="785" y="154">low safety burden</text>
+  </g>
+  <g>
+    <rect class="held" x="740" y="205" width="245" height="86" rx="12"/>
+    <text class="text state" x="770" y="243">needs_review</text>
+    <text class="text label" x="770" y="269">safety triage</text>
+  </g>
+  <g>
+    <rect class="node" x="740" y="320" width="245" height="86" rx="12"/>
+    <text class="text state" x="805" y="358">in_review</text>
+    <text class="text label" x="805" y="384">human safety check</text>
+  </g>
+  <g>
+    <rect class="approved" x="740" y="435" width="245" height="86" rx="12"/>
+    <text class="text state" x="800" y="473">signed_off</text>
+    <text class="text label" x="800" y="499">may progress</text>
+  </g>
+  <g>
+    <rect class="held" x="740" y="550" width="245" height="86" rx="12"/>
+    <text class="text state" x="815" y="588">contained</text>
+    <text class="text label" x="815" y="614">do not publish</text>
+  </g>
+
+  <path class="arrow" d="M 995 133 H 1090"/>
+  <path class="arrow" d="M 995 478 H 1090"/>
+  <path class="soft" d="M 985 248 H 1035 V 600 H 1090"/>
+  <path class="soft" d="M 985 593 H 1090"/>
+
+  <g>
+    <rect class="publish" x="1105" y="165" width="210" height="95" rx="12"/>
+    <text class="text state" x="1168" y="210">ready</text>
+    <text class="text label" x="1145" y="237">publication export</text>
+  </g>
+  <g>
+    <rect class="held" x="1105" y="360" width="210" height="95" rx="12"/>
+    <text class="text state" x="1172" y="405">held</text>
+    <text class="text label" x="1145" y="432">publication blocked</text>
+  </g>
+  <g>
+    <rect class="archive" x="1105" y="555" width="210" height="95" rx="12"/>
+    <text class="text state" x="1158" y="600">archived</text>
+    <text class="text label" x="1145" y="627">retained for audit</text>
+  </g>
+
+  <text class="text label" x="95" y="725">Publication rule: only data-approved rows that satisfy the safety gate can become ready; all other rows remain held or archived with review notes.</text>
+</svg>

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence tier and context matrix</title>
+  <desc id="desc">Matrix mapping evidence strength tiers against clinical, ceremonial, naturalistic, and microdosing contexts.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f8fb; }
+      .grid { fill: #ffffff; stroke: #d0d5dd; stroke-width: 2; }
+      .head { fill: #e8f3ff; stroke: #d0d5dd; stroke-width: 2; }
+      .tier { fill: #f4f3ff; stroke: #d0d5dd; stroke-width: 2; }
+      .high { fill: #ecfdf3; }
+      .medium { fill: #fff6e5; }
+      .low { fill: #fef3f2; }
+      .gap { fill: #f2f4f7; }
+      .text { font-family: Inter, Arial, sans-serif; fill: #101828; }
+      .title { font-size: 36px; font-weight: 700; }
+      .label { font-size: 19px; fill: #475467; }
+      .headtext { font-size: 23px; font-weight: 700; }
+      .tiertext { font-size: 22px; font-weight: 700; }
+      .cell { font-size: 18px; }
+    </style>
+  </defs>
+  <rect class="bg" width="1500" height="900"/>
+  <text class="text title" x="70" y="70">Fig. 3. Evidence tier and context matrix</text>
+  <text class="text label" x="70" y="105">Interpretation changes by both source strength and setting; labels are not context-free drug facts.</text>
+
+  <rect class="grid" x="70" y="150" width="1360" height="650" rx="8"/>
+
+  <rect class="head" x="70" y="150" width="260" height="90"/>
+  <rect class="head" x="330" y="150" width="275" height="90"/>
+  <rect class="head" x="605" y="150" width="275" height="90"/>
+  <rect class="head" x="880" y="150" width="275" height="90"/>
+  <rect class="head" x="1155" y="150" width="275" height="90"/>
+  <text class="text headtext" x="105" y="204">Evidence tier</text>
+  <text class="text headtext" x="395" y="204">Clinical</text>
+  <text class="text headtext" x="655" y="204">Ceremonial</text>
+  <text class="text headtext" x="930" y="204">Naturalistic</text>
+  <text class="text headtext" x="1200" y="204">Microdosing</text>
+
+  <rect class="tier" x="70" y="240" width="260" height="112"/>
+  <rect class="high" x="330" y="240" width="275" height="112"/>
+  <rect class="high" x="605" y="240" width="275" height="112"/>
+  <rect class="high" x="880" y="240" width="275" height="112"/>
+  <rect class="high" x="1155" y="240" width="275" height="112"/>
+  <text class="text tiertext" x="105" y="285">Tier 1</text>
+  <text class="text label" x="105" y="315">direct human or</text>
+  <text class="text label" x="105" y="340">clinical guidance</text>
+  <text class="text cell" x="360" y="278">Strongest basis for</text>
+  <text class="text cell" x="360" y="304">contraindication or</text>
+  <text class="text cell" x="360" y="330">protocol exclusion.</text>
+  <text class="text cell" x="635" y="278">Carry warning into</text>
+  <text class="text cell" x="635" y="304">facilitator planning;</text>
+  <text class="text cell" x="635" y="330">respect local consent.</text>
+  <text class="text cell" x="910" y="278">Plain-language caution</text>
+  <text class="text cell" x="910" y="304">for unsupervised use</text>
+  <text class="text cell" x="910" y="330">and acute care flags.</text>
+  <text class="text cell" x="1185" y="278">Dose pattern matters;</text>
+  <text class="text cell" x="1185" y="304">avoid false safety from</text>
+  <text class="text cell" x="1185" y="330">small repeated doses.</text>
+
+  <rect class="tier" x="70" y="352" width="260" height="112"/>
+  <rect class="medium" x="330" y="352" width="275" height="112"/>
+  <rect class="medium" x="605" y="352" width="275" height="112"/>
+  <rect class="medium" x="880" y="352" width="275" height="112"/>
+  <rect class="medium" x="1155" y="352" width="275" height="112"/>
+  <text class="text tiertext" x="105" y="397">Tier 2</text>
+  <text class="text label" x="105" y="427">case reports or</text>
+  <text class="text label" x="105" y="452">observational data</text>
+  <text class="text cell" x="360" y="390">Use as signal data;</text>
+  <text class="text cell" x="360" y="416">state confounding and</text>
+  <text class="text cell" x="360" y="442">population limits.</text>
+  <text class="text cell" x="635" y="390">Translate as caution;</text>
+  <text class="text cell" x="635" y="416">avoid implying ritual</text>
+  <text class="text cell" x="635" y="442">context proves safety.</text>
+  <text class="text cell" x="910" y="390">Useful for pattern</text>
+  <text class="text cell" x="910" y="416">recognition, not exact</text>
+  <text class="text cell" x="910" y="442">individual prediction.</text>
+  <text class="text cell" x="1185" y="390">Flag accumulation,</text>
+  <text class="text cell" x="1185" y="416">sleep, medication, and</text>
+  <text class="text cell" x="1185" y="442">interval uncertainty.</text>
+
+  <rect class="tier" x="70" y="464" width="260" height="112"/>
+  <rect class="medium" x="330" y="464" width="275" height="112"/>
+  <rect class="medium" x="605" y="464" width="275" height="112"/>
+  <rect class="medium" x="880" y="464" width="275" height="112"/>
+  <rect class="medium" x="1155" y="464" width="275" height="112"/>
+  <text class="text tiertext" x="105" y="509">Tier 3</text>
+  <text class="text label" x="105" y="539">mechanistic or</text>
+  <text class="text label" x="105" y="564">field consensus</text>
+  <text class="text cell" x="360" y="502">Mechanism can justify</text>
+  <text class="text cell" x="360" y="528">screening even without</text>
+  <text class="text cell" x="360" y="554">pair-specific trials.</text>
+  <text class="text cell" x="635" y="502">Represent as practical</text>
+  <text class="text cell" x="635" y="528">risk language tied to</text>
+  <text class="text cell" x="635" y="554">supervision and timing.</text>
+  <text class="text cell" x="910" y="502">Avoid silence when a</text>
+  <text class="text cell" x="910" y="528">plausible mechanism is</text>
+  <text class="text cell" x="910" y="554">harm-relevant.</text>
+  <text class="text cell" x="1185" y="502">Use lower-certainty</text>
+  <text class="text cell" x="1185" y="528">copy and emphasize</text>
+  <text class="text cell" x="1185" y="554">unknown chronic effects.</text>
+
+  <rect class="tier" x="70" y="576" width="260" height="112"/>
+  <rect class="low" x="330" y="576" width="275" height="112"/>
+  <rect class="low" x="605" y="576" width="275" height="112"/>
+  <rect class="low" x="880" y="576" width="275" height="112"/>
+  <rect class="low" x="1155" y="576" width="275" height="112"/>
+  <text class="text tiertext" x="105" y="621">Tier 4</text>
+  <text class="text label" x="105" y="651">theoretical, sparse,</text>
+  <text class="text label" x="105" y="676">or source gap</text>
+  <text class="text cell" x="360" y="614">Hold as provisional;</text>
+  <text class="text cell" x="360" y="640">escalate before strong</text>
+  <text class="text cell" x="360" y="666">clinical language.</text>
+  <text class="text cell" x="635" y="614">Invite expert review;</text>
+  <text class="text cell" x="635" y="640">do not overgeneralize</text>
+  <text class="text cell" x="635" y="666">traditional practice.</text>
+  <text class="text cell" x="910" y="614">Use "unknown" and</text>
+  <text class="text cell" x="910" y="640">"avoid stacking risk"</text>
+  <text class="text cell" x="910" y="666">language.</text>
+  <text class="text cell" x="1185" y="614">Default to uncertainty;</text>
+  <text class="text cell" x="1185" y="640">avoid reassurance from</text>
+  <text class="text cell" x="1185" y="666">low exposure alone.</text>
+
+  <rect class="gap" x="70" y="688" width="1360" height="112"/>
+  <text class="text tiertext" x="105" y="735">Source gap rule</text>
+  <text class="text cell" x="330" y="735">A missing source is an audit flag, not evidence of absence. Rows with source gaps should remain held until review resolves the gap or downgrades publication language.</text>
+  <text class="text label" x="330" y="765">Current CSV context: clinical, ceremonial, naturalistic, and microdosing contexts are represented indirectly through timing guidance, field notes, evidence gaps, and source metadata.</text>
+</svg>
