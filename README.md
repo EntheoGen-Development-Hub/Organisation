@@ -72,7 +72,7 @@ EntheoGen is **educational**, not clinical advice. For harm reduction and medica
 
 ## What this version is
 
-**Beta-0.1 (app)** still ships as **static JSON** built from curated CSVs—no live database required for the public interaction guide. See [Beta-0.1 release notes (wiki)](https://github.com/chaosste/EntheoGen/wiki/EntheoGen-Beta%E2%80%900%E2%80%901).
+**Beta-0.1 (app)** still ships as **static JSON** built from curated CSVs—no live database required for the public interaction guide. See [Beta-0.1 release notes (wiki)](https://github.com/chaosste/EntheoGen/wiki/EntheoGen-Beta-0-1).
 
 **Since that baseline**, the repo has gained clearer **automation and data-operation docs**, optional **Supabase Phase 1** alignment for analytics and exports (not a runtime dependency for the SPA), and operational notes for **parallel programmes** (e.g. private beta launch) without changing the core “snapshot in, UI out” contract.
 
